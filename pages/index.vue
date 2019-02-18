@@ -1,35 +1,21 @@
 <template>
   <section class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        yus-furniture
-      </h1>
-      <h2 class="subtitle">
-        catalog website for yus furniture based on Jakarta
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >GitHub</a>
-      </div>
+    <div class="wrapper-header">
+      <Header />
+    </div>
+    <div class="wrapper-catalog">
+      <Catalog />
     </div>
   </section>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
+import Header from '~/components/Header.vue'
+import Catalog from '~/components/Catalog.vue'
 export default {
   components: {
-    Logo
+    Header,
+    Catalog
   }
 }
 </script>
@@ -37,11 +23,24 @@ export default {
 <style>
 .container {
   margin: 0 auto;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-direction: column;
+}
+
+.wrapper-header {
+  display: flex;
+  width: 100%;
+  /* background-color: #F6F5F3; */
+  padding: 2.5rem 2.5rem .5rem 2.5rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.wrapper-catalog {
+  display: flex;
+  width: 70%;
 }
 
 .title {
