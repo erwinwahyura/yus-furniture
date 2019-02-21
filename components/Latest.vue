@@ -1,8 +1,11 @@
 <template>
   <div class="catalog-container">
+    <div class="catalog-title">
+      <h4 class="lastest-post">Latest Post</h4>
+    </div>
     <div class="main-catalog">
       <div v-for="(catalog, idx) in catalogs" :key="idx" class="card-type-3">
-        <nuxt-link :to="'/details/' + catalog.id">
+        <nuxt-link :to="'/latest-post/' + catalog.id">
           <div class="card">
             <img class="card-img-top" :src="catalog.image" alt="Card image cap">
             <div class="card-body">
@@ -37,23 +40,10 @@ export default {
         id: 4,
         name: 'product 4',
         image: 'http://demo.posthemes.com/pos_vonia/layout3/44-home_default/printed-summer-dress.jpg'
-      }, {
-        id: 5,
-        name: 'product 5',
-        image: 'http://demo.posthemes.com/pos_vonia/36-large_default/printed-dress.jpg'
-      }, {
-        id: 6,
-        name: 'product 6',
-        image: 'http://demo.posthemes.com/pos_vonia/layout3/71-home_default/printed-summer-dress.jpg'
-      }],
-      isMouseOver: false
+      }]
     }
   },
   methods: {
-    doHover(idx) {
-      this.isMouseOver = true
-      console.log(idx, ' a')
-    }
   }
 }
 </script>
@@ -62,6 +52,20 @@ export default {
   .catalog-container {
     display: flex;
     width: 100%;
+    flex-direction: column;
+  }
+
+  .catalog-title {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+  h4.lastest-post {
+    border-bottom: 1px solid #bfbfbf;
+    box-shadow: 0px 1.5px 5px -1.5px #ccc;
+    font-size: 25px;
   }
 
   .main-catalog {
@@ -90,8 +94,8 @@ export default {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    -webkit-box-shadow: 1px 1px 1px 1px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-    -moz-box-shadow:    1px 1px 1px 1px #ccc;  /* Firefox 3.5 - 3.6 */
+    -webkit-box-shadow: 0px 3px 6px -1.5px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    0px 3px 6px -1.5px #ccc;  /* Firefox 3.5 - 3.6 */
     box-shadow:         0px 3px 6px -1.5px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
     /* -webkit-transform: scale(1.05);
     transform: scale(1.05); */

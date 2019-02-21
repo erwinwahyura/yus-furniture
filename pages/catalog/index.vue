@@ -4,18 +4,18 @@
       <Header />
     </div>
     <div class="wrapper-catalog">
-      <Latest />
+      <Catalog />
     </div>
   </section>
 </template>
 
 <script>
 import Header from '~/components/Header.vue'
-import Latest from '~/components/Latest.vue'
+import Catalog from '~/components/Catalog.vue'
 export default {
   components: {
     Header,
-    Latest
+    Catalog
   }
 }
 </script>

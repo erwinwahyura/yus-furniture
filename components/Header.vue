@@ -5,7 +5,7 @@
       <Logo />
     </div>
     <div class="header-menu">
-      <nuxt-link to="/" class="menu">
+      <nuxt-link to="/catalog" class="menu">
         ALL
       </nuxt-link>
       <nuxt-link to="/kitchen-set" class="menu">
