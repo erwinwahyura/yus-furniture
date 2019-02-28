@@ -1,0 +1,39 @@
+.header-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.header-title {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+}
+
+.header-menu {
+  display: flex;
+  widows: 100%;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 2.5rem;
+}
+
+.menu {
+  font-weight: 900;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.menu:hover {
+  font-weight: 900;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: slategray;
+}
+
+a:-webkit-any-link {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}

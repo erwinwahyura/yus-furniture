@@ -20,6 +20,8 @@
 
 <script>
 export default {
+  components: {
+  },
   data() {
     return {
       catalogs: [{
@@ -58,3 +60,6 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+</style>

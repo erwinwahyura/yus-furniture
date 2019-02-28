@@ -1,10 +1,21 @@
 <template>
   <div>
+    <div class="wrapper-header">
+      <Header />
+    </div>
     <nuxt />
   </div>
 </template>
-
+<script>
+import Header from '~/components/Header.vue'
+export default {
+  components: {
+    Header
+  }
+}
+</script>
 <style>
+@import '../assets/styles/default.css';
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
