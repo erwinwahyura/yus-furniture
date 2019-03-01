@@ -1,7 +1,9 @@
 <template>
   <div class="catalog-container">
+    <div class="catalog-title">
+      {{ this.$route.query.name }}
+    </div>
     <div class="main-catalog">
-      {{ id }}
       <div v-for="(catalog, idx) in catalogs" :key="idx" class="card-type-3">
         <nuxt-link :to="'/details/' + catalog.id">
           <div class="card">
@@ -60,7 +62,7 @@ export default {
   watch: {
     '$route'(to, from) {
       // react to route changes...
-      console.log(this.$route.params)
+      console.log(this.$route.query)
     }
   },
   created() {

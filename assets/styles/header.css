@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 .header-container {
   display: flex;
   width: 100%;
@@ -20,16 +22,18 @@
 }
 
 .menu {
-  font-weight: 900;
+  font-weight: lighter;
   padding: 0.5rem;
   cursor: pointer;
+  font-family: 'Poppins', sans-serif;
 }
 
 .menu:hover {
-  font-weight: 900;
+  font-weight: lighter;
   padding: 0.5rem;
   cursor: pointer;
   color: slategray;
+  font-family: 'Poppins', sans-serif;
 }
 
 a:-webkit-any-link {

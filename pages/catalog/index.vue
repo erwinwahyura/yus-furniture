@@ -1,8 +1,7 @@
 <template>
   <section class="container">
     <div class="wrapper-catalog">
-      {{ $route.params.id }}
-      <Catalog :id="$route.params.id"/>
+      <Catalog :id="$route.query.id"/>
     </div>
   </section>
 </template>
