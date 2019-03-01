@@ -1,18 +1,11 @@
+
 .container {
-  margin: 0 auto;
+  margin: 0 0 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-direction: column;
-}
-
-.wrapper-header {
-  display: flex;
-  width: 100%;
-  /* background-color: #F6F5F3; */
-  padding: 2.5rem 2.5rem .5rem 2.5rem;
-  border-bottom: 1px solid #e5e5e5;
 }
 
 .wrapper-catalog {
@@ -40,4 +33,27 @@
 
 .links {
   padding-top: 15px;
+}
+
+/* default.vue */
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.wrapper-header {
+  display: flex;
+  width: 100%;
+  /* background-color: #F6F5F3; */
+  padding: 2.5rem 2.5rem .5rem 2.5rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  background-color: #ccc;
+  bottom: 0;
+  position: fixed;
 }

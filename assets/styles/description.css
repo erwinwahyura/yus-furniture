@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+.main-description {
+  display: flex;
+  width: 100%;
+  padding: 30px;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.description-title {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  margin: 5px;
+}
+
+article.intro {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  text-align: justify;
+  word-spacing: 0.3em;
+  letter-spacing: 0.02em;
+  font-size: 15px;
+}

@@ -9,7 +9,7 @@
       <nuxt-link to="/" class="menu">
         ALL
       </nuxt-link>
-      <nuxt-link :to="{ name: 'catalog', query: { id: 'kitchen-set', name: 'Kitchecn Set' } }" class="menu">
+      <nuxt-link :to="{ name: 'catalog', query: { id: 'kitchen-set', name: 'Kitchen Set' } }" class="menu">
         KITCHEN SET
       </nuxt-link>
       <nuxt-link :to="{ name: 'catalog', query: { id: 'bed-room', name: 'Bed Room' } }" class="menu">
