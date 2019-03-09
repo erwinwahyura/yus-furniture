@@ -1,7 +1,9 @@
 <template>
   <div class="catalog-container">
     <div class="catalog-title">
-      <h4 class="lastest-post">Latest Post</h4>
+      <h4 class="lastest-post">
+        Latest Post
+      </h4>
     </div>
     <div class="main-catalog">
       <div v-for="(catalog, idx) in catalogs" :key="idx" class="card-type-3">

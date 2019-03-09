@@ -22,7 +22,12 @@
 
 <script>
 export default {
-  props: ['id'],
+  props: {
+    id: {
+      type: String,
+      default: ''
+    }
+  },
   data() {
     return {
       catalogs: [{
@@ -53,12 +58,6 @@ export default {
       isMouseOver: false
     }
   },
-  methods: {
-    doHover(idx) {
-      this.isMouseOver = true
-      console.log(idx, ' a')
-    }
-  },
   watch: {
     '$route'(to, from) {
       // react to route changes...
@@ -67,6 +66,12 @@ export default {
   },
   created() {
     console.log(this.$route)
+  },
+  methods: {
+    doHover(idx) {
+      this.isMouseOver = true
+      console.log(idx, ' a')
+    }
   }
 }
 </script>

@@ -24,6 +24,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin: 0px;
 }
 
 .card:hover {
@@ -48,7 +49,8 @@
 
 .card-title {
   /* line-height: 45; */
-  font-family: lato;
+  font-family: 'Poppins', sans-serif;
+  justify-content: center;
   color: #363636;
   padding: 5px 0;
   display: block;
@@ -57,23 +59,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 15px;
-  text-decoration: none;
-}
-
-.card-title {
-  display: flex;
-  justify-content: center;
-  line-height: 30px;
-  /* margin-top: 10px; */
-  font-size: 12px;
-  text-transform: uppercase;
-  /* font-weight: 700; */
-  width: 100%;
-  color: #363636;
-  background: white;
-  width: 100%;
-  opacity: 1;
-  transition: all 500ms ease-in;
   text-decoration: none;
 }
 

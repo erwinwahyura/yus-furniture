@@ -15,12 +15,18 @@
         </div>
       </div>
     </div>
+    <!-- ProductInfo -->
+    <div>
+      <ProductInfo />
+    </div>
   </div>
 </template>
 
 <script>
+import ProductInfo from '@/components/ProductInfo'
 export default {
   components: {
+    ProductInfo
   },
   data() {
     return {
@@ -62,4 +68,7 @@ export default {
 </script>
 
 <style scoped>
+.catalog-container {
+  margin-bottom: 130px;
+}
 </style>

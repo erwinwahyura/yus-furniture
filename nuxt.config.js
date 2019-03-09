@@ -29,10 +29,16 @@ module.exports = {
   css: [
   ],
 
+  serverMiddleware: [
+    {
+      path: '/api', handler: '~/api/index.js'
+    }
+  ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/axios'
   ],
 
   /*

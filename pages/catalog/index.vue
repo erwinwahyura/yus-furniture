@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <div class="wrapper-catalog">
-      <Catalog :id="$route.query.id"/>
+      <Catalog :id="$route.query.id" />
     </div>
   </section>
 </template>

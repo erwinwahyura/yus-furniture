@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 .catalog-container {
   display: flex;
   width: 100%;
@@ -36,6 +38,7 @@ h4.lastest-post {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin: 0px;
 }
 
 .card:hover {
@@ -62,9 +65,9 @@ h4.lastest-post {
   /* line-height: 45; */
   display: flex;
   justify-content: center;
-  font-family: lato;
+  font-family: 'Poppins', sans-serif;
   color: #363636;
-  padding: 5px 0;
+  margin: 5px;
   display: block;
   line-height: 25px;
   white-space: nowrap;

@@ -25,6 +25,15 @@ async function start() {
   // Give nuxt middleware to express
   app.use(nuxt.render)
 
+  // app.get('/random', (req, res, next) => {
+  //   const data = [
+  //     {
+  //       name: 'Erwin'
+  //     }
+  //   ]
+  //   res.status(200).json(data)
+  // })
+
   // Listen the server
   app.listen(port, host)
   consola.ready({
